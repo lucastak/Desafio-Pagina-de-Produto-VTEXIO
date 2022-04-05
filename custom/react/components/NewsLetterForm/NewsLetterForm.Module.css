@@ -1,0 +1,125 @@
+.newsletter__container {
+    /*margin-top: 80px;*/
+    background-color: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    margin: 12px 0 50px 0;
+}
+
+.newsletter__title h2 {
+    margin-bottom: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.newsletter__subtitle h3 {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.newsletter__input-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.newsletter__input-container input {
+    border: none;
+    width: 461px;
+    border-bottom: 1px solid #bfbfbf;
+    padding-bottom: 11px;
+    font-family: Roboto;
+    font-style: normal;
+    outline: 0;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #929292;
+}
+.newsletter__input-container input.invalid {
+    border: 1px solid red;
+}
+
+.newsletter__invalid-feedback {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: red;
+    position: absolute;
+    top: 45px;
+}
+
+.newsletter__button-submit {
+    width: 82px;
+    cursor: pointer;
+    display: block;
+    border: 0;
+    background: transparent;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffffff;
+    padding-bottom: 11px;
+    transition: ease-in-out 0.4s;
+    border-bottom: 2px solid white;
+}
+
+.newsletter__button-submit:hover {
+    filter: brightness(90%);
+}
+
+.newsletter__button-submit:active {
+    filter: brightness(100%);
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        width: 100%;
+    }
+
+    .newsletter__input-container {
+        flex-direction: column;
+        margin: 0 16px 0 16px;
+    }
+
+    .newsletter__input-container input {
+        text-align: center;
+    }
+
+    .newsletter__button-submit {
+        margin: 30px 0 0 0;
+    }
+
+    .newsletter__input-container input,
+    .newsletter__button-submit {
+        width: 100%;
+    }
+
+    .newsletter__invalid-feedback {
+        top: 40px;
+    }
+
+    .newsletter__button-submit {
+        margin-top: 30px;
+    }
+}

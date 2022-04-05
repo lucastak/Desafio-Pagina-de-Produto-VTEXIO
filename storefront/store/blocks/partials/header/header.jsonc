@@ -1,0 +1,204 @@
+{
+    "header": {
+        "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    },
+    "header.full": {
+        "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    },
+    "header-layout.desktop": {
+        "children": ["slider-layout#text-top", "header-row#4-desktop"]
+    },
+    "header-row#4-desktop": {
+        "children": [
+            "logo#desktop",
+            "header-spacer",
+            "vtex.menu@2.x:menu#category-menu",
+            "header-spacer",
+            "search-bar",
+            "overlay-trigger#login",
+            //"minicart.v2"
+            "overlay-trigger#minicart"
+        ],
+        "props": {
+            "sticky": true,
+            "blockClass": "main-header"
+        }
+    },
+
+    "header-row#5-desktop": {
+        "children": ["dynamic-menu"],
+        "props": {
+            "sticky": false,
+            "blockClass": "main-header-menu"
+        }
+    },
+    "search-bar": {
+        "blocks": ["autocomplete-result-list.v2"],
+        "props": {
+            "openAutocompleteOnFocus": true,
+            "maxWidth": "211px",
+            "placeholder": "Buscar...",
+            "blockClass": "search-header",
+            "hasIconLeft": true,
+            "displayMode": "search-button"
+        }
+    },
+    "autocomplete-result-list.v2": {
+        "blocks": ["product-summary.shelf#m3-shelf-product"]
+    },
+    "search-bar#mobile": {
+        "blocks": ["autocomplete-result-list.v2"],
+        "props": {
+            "blockClass": "mobile",
+            "openAutocompleteOnFocus": true,
+            "maxWidth": "264px",
+            "placeholder": "Buscar...",
+            "displayMode": "clear-button"
+        }
+    },
+    "logo#desktop": {
+        "props": {
+            "title": "Agência M3 Academy",
+            "href": "/",
+            "url": "assets/svgs/logo-academy.svg",
+            "width": "120"
+        }
+    },
+    "header-layout.mobile": {
+        "children": [
+            "slider-layout#text-top",
+            "header-row#1-mobile",
+            "header-row#2-mobile"
+        ],
+        "props": {
+            "blockClass": "mobile-header"
+        }
+    },
+    "header-row#1-mobile": {
+        "children": ["drawer", "logo#mobile", "minicart.v2"],
+        "props": {
+            "sticky": true,
+            "blockClass": "main-header-mobile"
+        }
+    },
+
+    "header-row#2-mobile": {
+        "children": ["search-bar#mobile"],
+        "props": {
+            "sticky": false,
+            "blockClass": ["mobile-search", "teste"]
+        }
+    },
+    "drawer": {
+        "props": {
+            "maxWidth": "311px"
+        },
+        "children": ["menu#drawer"]
+    },
+    "flex-layout.row#login-desktop": {
+        "children": ["login"],
+        "props": {
+            "preventHorizontalStretch": false,
+            "colSizing": "2",
+            "blockClass": "login-wrapper"
+        }
+    },
+    "flex-layout.row#drawer-top": {
+        "children": ["flex-layout.col#drawer-top-links"],
+        "props": {
+            "sticky": true,
+            "blockClass": "drawer-top-content"
+        }
+    },
+    "flex-layout.col#drawer-top-links": {
+        "children": [
+            "menu-item#sign-up-&-sign-in",
+            "menu-item#my-account",
+            "menu-item#my-orders"
+        ],
+        "props": {
+            "sticky": true,
+            "blockClass": "mobile-links-container"
+        }
+    },
+    "menu#drawer": {
+        "children": [
+            "flex-layout.row#drawer-top",
+            "menu-item#category-novidades--mobile",
+            "menu-item#category-sapatos--mobile",
+            "menu-item#category-bolsas--mobile",
+            "menu-item#category-acessorios--mobile",
+            "menu-item#category-outlet--mobile",
+            "menu-item#category-lojas",
+            "menu-item#category-seja-franqueado"
+        ],
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "m3-custom-drawer"
+        }
+    },
+    "logo#mobile": {
+        "props": {
+            "title": "Agência M3 Logo",
+            "href": "/",
+            "url": "assets/svgs/logo-academy.svg",
+            "width": "200"
+        }
+    },
+    "overlay-trigger#login": {
+        "props": {
+            "trigger": "click"
+        },
+        "children": ["login", "overlay-layout#login-overlay"]
+    },
+
+    "overlay-layout#login-overlay": {
+        "props": {
+            "scrollBehavior": "lock-page-scroll",
+            "backdrop": "visible",
+            "blockClass": "overlay-login"
+        }
+    },
+
+    "overlay-trigger#minicart": {
+        "props": {
+            "trigger": "click"
+        },
+        "children": ["minicart.v2", "overlay-layout#login-overlay"]
+    },
+
+    "overlay-layout#minicart-overlay": {
+        "props": {
+            "scrollBehavior": "lock-page-scroll",
+            "backdrop": "visible",
+            "blockClass": "overlay-minicart"
+        }
+    },
+
+    "login": {
+        //https://github.com/vtex-apps/login/blob/master/docs/README.md
+        "props": {
+            "emailAndPasswordTitle": "Entrar com e-mail e senha",
+            "accessCodeTitle": "Receber código de acesso ",
+            "emailPlaceholder": "Digite seu e-mail",
+            "passwordPlaceholder": "Digite sua senha",
+            "showPasswordVerificationIntoTooltip": true,
+            "hasGoogleOneTap": false,
+            "showIconProfile": true,
+            "hideIconLabel": true
+        }
+    },
+    "login#mobile": {
+        //https://github.com/vtex-apps/login/blob/master/docs/README.md
+        "props": {
+            // "logInButtonBehavior":"link",
+            "mirrorTooltipToRight": true,
+            "blockClass": "mobile",
+            "emailAndPasswordTitle": "LOG-IN",
+            "accessCodeTitle": "Receber código de acesso",
+            "emailPraceholder": "e-mail",
+            "passwordPlaceholder": "password",
+            "showPasswordVerificationIntoTooltip": true
+        }
+    }
+}

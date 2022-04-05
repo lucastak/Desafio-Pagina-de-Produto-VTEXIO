@@ -1,0 +1,33 @@
+.pixDiscount__container-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.pixDiscount__container-image {
+    margin-right: 20px;
+}
+
+.pixDiscount__container-text {
+    max-width: 115px;
+}
+
+.pixDiscount__total {
+    font-family: "Open Sans";
+    color: #00000094;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.pixDiscount__percent {
+    display: block;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 18px;
+    color: #929292;
+}

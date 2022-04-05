@@ -1,0 +1,172 @@
+{
+    "overlay-trigger#outlet": {
+        "props": {
+            "trigger": "hover"
+        },
+        "children": ["menu-item#outlet", "overlay-layout#outlet-overlay"]
+    },
+
+    "overlay-layout#outlet-overlay": {
+        "props": {
+            //"scrollBehavior": "lock-page-scroll",
+            "placement": "bottom",
+            "backdrop": "visible",
+            "blockClass": "custom-dropdown"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-outlet",
+            "image#sub-menu-banner--outlet"
+        ]
+    },
+
+    "menu-item#outlet": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-outlet",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "type": "internal",
+                "href": "/outlet",
+                "noFollow": true,
+                "tagTitle": "outlet",
+                "text": "OUTLET"
+            }
+        }
+        //"blocks": ["vtex.menu@2.x:submenu#outlet"]
+    },
+
+    "vtex.menu@2.x:submenu#outlet": {
+        "children": [
+            "vtex.menu@2.x:menu#submenu-outlet",
+            "image#sub-menu-banner--outlet"
+        ],
+        "props": {
+            "blockClass": "custom-dropwdown"
+        }
+    },
+    "image#sub-menu-banner--outlet": {
+        "props": {
+            "blockClass": "menu-banner",
+            "src": "assets/imgs/novidades-menu-image.png",
+            "maxWidth": 307,
+            "link": true
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-outlet": {
+        "props": {
+            "blockClass": ["custom-dropdown-submenu", "outlet"],
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 01",
+                        "text": "Dolce & Gabbana"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 02",
+                        "text": "Victoria Secret"
+                    }
+                },
+                {
+                    "id": "menu-item-ver-todos",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": true,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/VER TODOS",
+                        "noFollow": false,
+                        "tagTitle": "VER TODOS",
+                        "text": "VER TODOS"
+                    }
+                }
+            ]
+        }
+    },
+
+    //MOBILE
+    "menu-item#category-outlet--mobile": {
+        "props": {
+            "blockClass": "header-menu-accordion-title",
+            "id": "menu-item-category-sapatos",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 2,
+                "text": "outlet"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu.accordion#outlet-mobile"]
+    },
+    "vtex.menu@2.x:submenu.accordion#outlet-mobile": {
+        "props": {
+            "blockClass": "header"
+        },
+        "children": ["vtex.menu@2.x:menu#outlet-mobile-accordion"]
+    },
+    "vtex.menu@2.x:menu#outlet-mobile-accordion": {
+        "props": {
+            "orientation": "vertical",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 01",
+                        "text": "Dolce & Gabbana"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 02",
+                        "text": "Victoria Secret"
+                    }
+                },
+                {
+                    "id": "menu-item-ver-todos",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": true,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/VER TODOS",
+                        "noFollow": false,
+                        "tagTitle": "VER TODOS",
+                        "text": "VER TODOS"
+                    }
+                }
+            ]
+        }
+    }
+}

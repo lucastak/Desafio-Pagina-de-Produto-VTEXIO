@@ -1,0 +1,144 @@
+.sellingPrice--m3-custom-selling-price {
+    display: block;
+    margin: 8px 0 4px 0;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #7d7d7d;
+    text-transform: uppercase;
+}
+
+.sellingPrice--m3-custom-selling-price
+    .currencyContainer--m3-custom-selling-price {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #292929;
+}
+
+.installments--m3-custom-installments {
+    font-size: 12px;
+    line-height: 14px;
+    color: #7d7d7d;
+}
+
+.installmentValue--m3-custom-installments {
+    font-weight: 700;
+}
+.savings--m3-custom-price-savings {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: lowercase;
+    color: #a70505;
+}
+
+.currencyContainer--m3-shelf {
+    font-weight: 700 !important;
+}
+
+.listPrice .currencyContainer--m3-shelf {
+    font-weight: 400 !important;
+}
+
+.savings--m3-shelf {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+    text-transform: lowercase;
+    color: #a70505;
+}
+.savings--m3-shelf::before {
+    content: "/";
+}
+.currencyCode {
+    text-transform: uppercase;
+}
+
+.listPrice--m3-shelf {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-decoration-line: line-through;
+    color: #bababa;
+}
+
+.listPrice--m3-shelf::before {
+    content: "de ";
+}
+
+.listPrice--m3-shelf::after {
+    content: " por";
+}
+
+.listPriceValue {
+    font-weight: 400;
+}
+
+.installments--m3-shelf {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #7d7d7d;
+    margin-bottom: 22px;
+}
+.savings--saving-price-badge {
+    display: block;
+    flex-wrap: wrap;
+    padding: 5px 11px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ffffff;
+    //background: #000000;
+    background: url(assets/svgs/retangulo-triangulo.svg) no-repeat center center !important;
+    text-align: left;
+}
+
+.savings--saving-price-badge::after {
+    content: " EXCLUSIVO";
+    display: block;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.savings-discount--saving-price-badge {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+}
+.sellingPrice--m3-shelf {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+}
+
+// .installmentsNumber--9 :global(.installmentsNumber--m3-custom-installments--9) {
+//     font-weight: 700;
+// }

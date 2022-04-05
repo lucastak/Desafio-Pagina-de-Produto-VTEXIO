@@ -1,0 +1,20 @@
+.product-identifier__label,
+.product-identifier__value,
+.product-identifier__separator {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #929292;
+}
+
+.product-identifier__label,
+.product-identifier__separator {
+    display: none;
+}
+
+.product-identifier {
+    display: block;
+    margin-bottom: 5px;
+}

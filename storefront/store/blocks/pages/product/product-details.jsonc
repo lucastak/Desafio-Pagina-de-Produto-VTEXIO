@@ -1,0 +1,200 @@
+{
+    "tab-layout#product-details": {
+        "children": ["tab-list#product-details", "tab-content#product-details"],
+        "props": {
+            "blockClass": "home",
+            "defaultActiveTabId": "description"
+        }
+    },
+
+    //botoes de navegacao
+    "tab-list#product-details": {
+        "children": [
+            "tab-list.item#description",
+            "tab-list.item#information",
+            "tab-list.item#sizes",
+            "tab-list.item#ratings",
+            "tab-list.item#devolutions"
+        ]
+    },
+    "tab-list.item#description": {
+        "props": {
+            "tabId": "description",
+            "label": "Descrições",
+            "defaultActiveTab": true
+        }
+    },
+
+    "tab-list.item#information": {
+        "props": {
+            "tabId": "information",
+            "label": "Informações",
+            "defaultActiveTab": false
+        }
+    },
+
+    "tab-list.item#sizes": {
+        "props": {
+            "tabId": "sizes",
+            "label": "Guia de Tamanhos",
+            "defaultActiveTab": false
+        }
+    },
+
+    "tab-list.item#ratings": {
+        "props": {
+            "tabId": "ratings",
+            "label": "Avaliações",
+            "defaultActiveTab": false
+        }
+    },
+
+    "tab-list.item#devolutions": {
+        "props": {
+            "tabId": "devolutions",
+            "label": "Trocas e Devoluções",
+            "defaultActiveTab": false
+        }
+    },
+
+    //so precisa dessa tab-content
+    "tab-content#product-details": {
+        "children": [
+            "tab-content.item#description",
+            "tab-content.item#information",
+            "tab-content.item#sizes",
+            "tab-content.item#ratings",
+            "tab-content.item#devolutions"
+        ]
+    },
+
+    //conteudos dos botoes
+    "tab-content.item#description": {
+        "children": ["flex-layout.row#description-product"],
+        "props": {
+            "tabId": "description"
+        }
+    },
+
+    "tab-content.item#information": {
+        "children": ["flex-layout.row#information-product"],
+        "props": {
+            "tabId": "information"
+        }
+    },
+
+    "tab-content.item#sizes": {
+        "children": ["flex-layout.row#information-sizes"],
+        "props": {
+            "tabId": "sizes"
+        }
+    },
+
+    "tab-content.item#ratings": {
+        "children": ["flex-layout.row#ratings"],
+        "props": {
+            "tabId": "ratings"
+        }
+    },
+
+    "tab-content.item#devolutions": {
+        "children": ["flex-layout.row#devolutions"],
+        "props": {
+            "tabId": "devolutions"
+        }
+    },
+
+    "flex-layout.row#description-product": {
+        "children": [
+            "flex-layout.col#image-product",
+            "flex-layout.col#description-text"
+        ],
+        "props": {
+            "blockClass": "description-block-product",
+            "fullWidth": true
+        }
+    },
+
+    "flex-layout.row#information-product": {
+        "children": ["product-specifications#product"],
+        "props": {
+            "blockClass": "information-block-product"
+        }
+    },
+
+    "flex-layout.row#information-sizes": {
+        "children": ["rich-text#sizes"],
+        "props": {
+            "blockClass": "sizes-block-product"
+        }
+    },
+
+    "flex-layout.row#ratings": {
+        "children": ["rich-text#ratings"],
+        "props": {
+            "blockClass": "ratings-block-product"
+        }
+    },
+
+    "flex-layout.row#devolutions": {
+        "children": ["rich-text#devolutions"],
+        "props": {
+            "blockClass": "devolutions-block-product"
+        }
+    },
+
+    "flex-layout.col#image-product": {
+        "children": ["product-images"],
+        "props": {
+            "blockClass": "description-image"
+        }
+    },
+
+    "flex-layout.col#description-text": {
+        "children": ["product-description"],
+        "props": {
+            "blockClass": "description-text"
+        }
+    },
+
+    "rich-text#teste-texto": {
+        "props": {
+            "text": "TESTEEEEEEEEEEE"
+        }
+    },
+
+    "rich-text#sizes": {
+        "props": {
+            "text": "Guia de tamanhos",
+            "textPosition": "CENTER"
+        }
+    },
+
+    "rich-text#ratings": {
+        "props": {
+            "text": "Avaliações",
+            "textPosition": "CENTER"
+        }
+    },
+
+    "rich-text#devolutions": {
+        "props": {
+            "text": "Troca e Devoluções",
+            "textPosition": "CENTER"
+        }
+    },
+
+    "product-specifications#product": {
+        "props": {
+            "shoudCollapseOnTabChange": true,
+            "collapsible": "desktopOnly"
+        }
+    },
+
+    "product-description": {
+        "props": {
+            "collapseContent": false,
+            "title": "Descrição do produto"
+        }
+    }
+}

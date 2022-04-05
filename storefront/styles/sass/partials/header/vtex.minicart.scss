@@ -1,0 +1,222 @@
+.minicartQuantityBadgeDefault {
+    background-color: $color-blue2;
+}
+
+.openIconContainer {
+    padding: 12px 12px 12px 0;
+
+    @include mq(md, max) {
+        padding: 12px 0 12px 12px;
+    }
+}
+
+.minicartIconContainer {
+    /*background: url(assets/svgs/cart.svg) no-repeat center center !important;
+    background-size: contain;*/
+    height: 20px;
+    width: 20px;
+}
+
+.minicartEmptyStateContainer :global(.vtex-flex-layout-0-x-flexCol) {
+    flex-direction: column-reverse;
+    gap: 11px;
+}
+
+.minicartEmptyStateContainer
+    :global(.vtex-flex-layout-0-x-flexCol)
+    :global(.vtex-flex-layout-0-x-flexColChild)
+    :global(.vtex-rich-text-0-x-paragraph) {
+    font-family: "Tenor Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    color: #000000;
+}
+
+//Footer
+
+.minicartSummary
+    :global(.vtex-checkout-summary-0-x-summaryItemContainer):not(:last-child) {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #a3a3a3;
+}
+
+.minicartSummary
+    :global(.vtex-checkout-summary-0-x-summarySmallContent)
+    :global(.vtex-checkout-summary-0-x-summaryItemContainer):last-child {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    border-top: 1px solid #e6ebf2;
+    padding-top: 16px;
+}
+
+.minicartSummary :global(.vtex-checkout-summary-0-x-summarySmallDisclaimer) {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #a3a3a3;
+}
+
+.minicartCheckoutButton :global(.vtex-button) {
+    background-color: #000000;
+    border-radius: 0;
+    border: none;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+.minicartProductListContainer {
+    position: relative;
+}
+
+.minicartProductListContainer
+    :global(.vtex-flex-layout-0-x-flexRowContent--product) {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.minicartProductListContainer
+    :global(.vtex-product-list-0-x-removeButtonContainer) {
+    background: url(assets/svgs/delete-icon.svg) no-repeat center center;
+}
+
+.minicartProductListContainer :global(.vtex-product-list-0-x-removeButton) {
+    opacity: 0;
+}
+
+.minicartProductListContainer :global(.vtex-product-list-0-x-productName) {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+}
+
+.minicartProductListContainer :global(.vtex-flex-layout-0-x-flexRow--product) {
+    position: relative;
+}
+
+// .minicartProductListContainer :global(.vtex-product-list-0-x-unitPrice) {
+//     position: absolute;
+//     top: 42%;
+//     left: 32%;
+// }
+
+.minicartProductListContainer
+    :global(.vtex-product-list-0-x-unitPriceMeasurementUnit),
+.minicartProductListContainer :global(.vtex-product-list-0-x-price) {
+    display: none;
+}
+
+.minicartProductListContainer
+    :global(.vtex-product-quantity-1-x-quantitySelectorContainer--m3-custom-quantity) {
+    position: absolute;
+    right: 0;
+}
+
+.minicartProductListContainer :global(.vtex-product-list-0-x-unitListPrice) {
+    margin-top: -8px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    text-decoration-line: line-through;
+
+    color: #bababa;
+}
+
+.minicartProductListContainer
+    :global(.vtex-product-list-0-x-unitListPrice)::before {
+    content: "de ";
+}
+
+.minicartProductListContainer
+    :global(.vtex-product-list-0-x-unitListPrice)::after {
+    content: " por";
+}
+
+.minicartProductListContainer
+    :global(.vtex-product-list-0-x-unitPricePerUnitCurrency) {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.minicartTitle {
+    font-family: "Tenor Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    color: #000000;
+    margin: 9px 0 10px 0;
+}
+
+.minicartTitle::before {
+    margin-left: -10px;
+    content: "haha"; //Gambiarra, não consegui de outro jeito :(
+    color: transparent;
+    background: url(assets/svgs/bag.svg) no-repeat center center;
+}
+
+.popupChildrenContainer {
+    margin: 0;
+    padding: 0;
+}
+
+.popupStyles {
+    height: 478px;
+}
+
+.popupBoxPosition {
+    top: 52px;
+    min-width: 30vw;
+}
+
+.popupArrowUp {
+    top: -8px;
+}
+
+@media screen and (max-width: 639px) {
+    .minicartProductListContainer
+        :global(.vtex-product-quantity-1-x-quantitySelectorStepper)
+        :global(.vtex-numeric-stepper__plus-button) {
+        width: 40px !important;
+    }
+
+    .minicartProductListContainer
+        :global(.vtex-product-quantity-1-x-quantitySelectorStepper)
+        :global(.vtex-numeric-stepper__minus-button) {
+        width: 40px !important;
+    }
+
+    .minicartProductListContainer
+        :global(.vtex-product-quantity-1-x-quantitySelectorContainer--m3-custom-quantity) {
+        position: initial;
+    }
+    .minicartProductListContainer
+        :global(.vtex-product-list-0-x-unitListPrice) {
+        margin-top: 0px;
+    }
+}

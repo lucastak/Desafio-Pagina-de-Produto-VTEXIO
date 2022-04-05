@@ -1,0 +1,68 @@
+.container--m3-product-breadcrumb {
+    font-size: 12px;
+}
+
+.link--m3-product-breadcrumb,
+.term--m3-product-breadcrumb {
+    text-transform: capitalize;
+    color: $color-gray4;
+    line-height: 14px;
+}
+
+.arrow--m3-product-breadcrumb {
+    color: $color-gray4;
+}
+
+.link--m3-product-breadcrumb {
+    margin-top: -3px;
+}
+
+.link--m3-product-breadcrumb:hover {
+    color: #808080;
+}
+
+.link {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+
+    color: #929292;
+
+    transition: ease-in 0.22s all;
+}
+:global(.vtex-breadcrumb-1-x-term) {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #929292;
+}
+
+.homeLink::after {
+    content: "Home";
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #929292;
+}
+
+.homeIcon {
+    display: none;
+}
+
+:global(.vtex-breadcrumb-1-x-term--m3-product-breadcrumb) {
+    display: none;
+}
+
+:global(.vtex-breadcrumb-1-x-termArrow--m3-product-breadcrumb) {
+    display: none;
+}
+
+:global(.vtex-breadcrumb-1-x-link--m3-product-breadcrumb--2) {
+    margin-left: 6px;
+}

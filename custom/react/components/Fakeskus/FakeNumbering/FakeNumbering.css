@@ -1,0 +1,63 @@
+.FakeNumbering__wrapper {
+    display: flex;
+    border-top: 1px solid #d9d9d9;
+    flex-direction: column;
+    position: absolute;
+    left: 25%;
+    bottom: 27%;
+}
+
+.FakeNumbering__list {
+    display: flex;
+    max-width: 265px;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.FakeNumbering__title {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #e19f98;
+}
+
+.FakeNumbering__title span {
+    font-weight: 700;
+}
+
+.FakeNumbering__item-list {
+    list-style: none;
+}
+
+.FakeNumbering__button {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+    width: 37px;
+    height: 37px;
+    margin: 8px 8px;
+    padding: 4px 10px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #afafaf;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1530px) {
+    .FakeNumbering__wrapper {
+        left: 27%;
+    }
+}
+
+@media screen and (max-width: 1344px) {
+    .FakeNumbering__wrapper {
+        left: 30%;
+    }
+}

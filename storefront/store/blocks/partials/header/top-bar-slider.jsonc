@@ -1,0 +1,35 @@
+{
+    "slider-layout#text-top": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "always",
+            "showPaginationDots": "never",
+            "blockClass": "slider-header"
+        },
+        "children": ["rich-text#1", "rich-text#2", "rich-text#3"]
+    },
+
+    "rich-text#1": {
+        "props": {
+            "text": "Desconto na primeira compra",
+            "blockClass": "slider-header__text"
+        }
+    },
+    "rich-text#2": {
+        "props": {
+            "text": "Frete Grátis acima de R$199,99",
+            "blockClass": "slider-header__text"
+        }
+    },
+    "rich-text#3": {
+        "props": {
+            "text": "10% de desconto no PIX",
+            "blockClass": "slider-header__text"
+        }
+    }
+}

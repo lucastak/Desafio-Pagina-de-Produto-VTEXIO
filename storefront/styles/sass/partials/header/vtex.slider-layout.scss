@@ -1,0 +1,21 @@
+.sliderLayoutContainer--slider-header {
+    background-color: #000000;
+    height: 28px;
+    padding: 20px 0;
+}
+
+.sliderRightArrow--slider-header {
+    margin-right: 30vw;
+
+    @include mq(md, max) {
+        margin-right: 4vw;
+    }
+}
+
+.sliderLeftArrow--slider-header {
+    margin-left: 30vw;
+
+    @include mq(md, max) {
+        margin-left: 4vw;
+    }
+}

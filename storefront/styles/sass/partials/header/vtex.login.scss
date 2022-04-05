@@ -1,0 +1,174 @@
+.profileIcon use {
+    display: none;
+}
+
+.profileIcon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(assets/svgs/userlogin-icon.svg) no-repeat center center;
+    background-size: contain;
+}
+
+.contentContainer {
+    margin-top: 3.5rem;
+}
+
+.arrowUp {
+    top: 42px;
+}
+
+.accessCodeOptionBtn :global(.vtex-button),
+.emailPasswordOptionBtn :global(.vtex-button) {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+.formTitle {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.forgotPasswordLink {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #b0b0b0;
+}
+
+:global(.vtex-input-prefix__group) {
+    border: 1px solid #b0b0b0;
+    border-radius: 0;
+}
+
+:global(.vtex-styleguide-9-x-input) {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #b0b0b0;
+}
+
+.formFooter {
+    border-top: 0;
+    border-bottom: 1px solid #b0b0b0;
+    margin: 0;
+    padding: 16px 0;
+    justify-content: flex-end;
+}
+
+.sendButton {
+    margin-left: 0;
+}
+
+.sendButton button {
+    background: #000000;
+    border-radius: 0;
+    padding: 6px 10px;
+}
+
+:global(.vtex-login-2-x-sendButton)
+    :global(.vtex-button)
+    :global(.vtex-button__label)
+    span {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.backButton {
+    margin-right: 5px;
+}
+
+.backButton button {
+    height: 100%;
+}
+
+.arrowBackIcon {
+    display: none;
+}
+
+.backButton :global(.vtex-button) :global(.vtex-button__label) span:last-child {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+}
+
+.formLinkContainer:last-child {
+    margin-top: 16px;
+}
+
+.emailAndPasswordForm form {
+    margin: 0;
+}
+
+.dontHaveAccount {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #000000;
+    margin-bottom: 34px;
+}
+
+.emailForm .formTitle {
+    text-align: left;
+    padding: 0;
+}
+
+.emailForm .formFooter {
+    border-bottom: 0;
+}
+
+.emailForm form {
+    margin: 0;
+}
+
+.inputContainerEmail::before {
+    content: "Email";
+    display: block;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 4px;
+}
+
+.inputContainerPassword::before {
+    content: "Senha";
+    display: block;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 4px;
+}

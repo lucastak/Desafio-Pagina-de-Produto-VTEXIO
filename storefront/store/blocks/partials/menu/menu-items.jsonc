@@ -1,0 +1,111 @@
+{
+    "vtex.menu@2.x:menu#category-menu": {
+        "props": {
+            "blockClass": "menu-links"
+        },
+        "children": [
+            //"menu-item#novidades",
+            "overlay-trigger#novidades",
+            //"menu-item#sapatos",
+            "overlay-trigger#sapatos",
+            //"menu-item#bolsas",
+            "overlay-trigger#bolsas",
+            //"menu-item#acessorios"
+            "overlay-trigger#acessorios",
+            //"menu-item#outlet",
+            "overlay-trigger#outlet",
+            "menu-item#category-lojas",
+            "menu-item#category-seja-franqueado"
+        ]
+    },
+
+    //Links Simples
+    "menu-item#category-lojas": {
+        "props": {
+            "blockClass": "menu-links-item",
+            "id": "menu-item-category-lojas",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "text": "LOJAS "
+            }
+        }
+    },
+    "menu-item#category-seja-franqueado": {
+        "props": {
+            "blockClass": "menu-links-item",
+            "id": "menu-item-category-seja-franqueado",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "text": "SEJA FRANQUEADO"
+            }
+        }
+    },
+    "menu-item#category-novidades": {
+        "props": {
+            "blockClass": "menu-links-item",
+            "id": "menu-item-category-novidades",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "text": "NOVIDADES"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu#novidades"]
+    },
+    "menu-item#sign-up-&-sign-in": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-sign-up-&-sign-in",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/login",
+                "noFollow": true,
+                "tagTitle": "/login",
+                "text": "ENTRE OU CADASTRA-SE"
+            }
+        }
+    },
+    "menu-item#my-account": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-my-account",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/account",
+                "noFollow": true,
+                "tagTitle": "/account",
+                "text": "MINHA CONTA"
+            }
+        }
+    },
+    "menu-item#my-orders": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-my-orders",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/my-orders",
+                "noFollow": true,
+                "tagTitle": "/my-orders",
+                "text": "MEUS PEDIDOS"
+            }
+        }
+    }
+}

@@ -1,0 +1,177 @@
+{
+    //desktop
+
+    "overlay-trigger#acessorios": {
+        "props": {
+            "trigger": "hover"
+        },
+        "children": [
+            "menu-item#acessorios",
+            "overlay-layout#acessorios-overlay"
+        ]
+    },
+
+    "overlay-layout#acessorios-overlay": {
+        "props": {
+            // "scrollBehavior": "lock-page-scroll",
+            "placement": "bottom",
+            "backdrop": "visible",
+            "blockClass": "custom-dropdown"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-acessorios",
+            "image#sub-menu-banner--acessorios"
+        ]
+    },
+
+    "menu-item#acessorios": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-acessorios",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "type": "internal",
+                "href": "/acessorios",
+                "noFollow": true,
+                "tagTitle": "acessorios",
+                "text": "ACESSORIOS"
+            }
+        }
+        //"blocks": ["vtex.menu@2.x:submenu#acessorios"]
+    },
+
+    "vtex.menu@2.x:submenu#acessorios": {
+        "children": [
+            "vtex.menu@2.x:menu#submenu-acessorios",
+            "image#sub-menu-banner--acessorios"
+        ],
+        "props": {
+            "blockClass": "custom-dropwdown"
+        }
+    },
+    "image#sub-menu-banner--acessorios": {
+        "props": {
+            "blockClass": "menu-banner",
+            "src": "assets/imgs/novidades-menu-image.png",
+            "maxWidth": 307,
+            "link": true
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-acessorios": {
+        "props": {
+            "blockClass": ["custom-dropdown-submenu", "acessorios"],
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 02",
+                        "text": "Brincos"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 02",
+                        "text": "Pulseiras"
+                    }
+                },
+                {
+                    "id": "menu-item-ver-todos",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": true,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/VER TODOS",
+                        "noFollow": false,
+                        "tagTitle": "VER TODOS",
+                        "text": "VER TODOS"
+                    }
+                }
+            ]
+        }
+    },
+
+    //mobile
+    "menu-item#category-acessorios--mobile": {
+        "props": {
+            "blockClass": "header-menu-accordion-title",
+            "id": "menu-item-category-sapatos",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 2,
+                "text": "acessorios"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu.accordion#acessorios-mobile"]
+    },
+    "vtex.menu@2.x:submenu.accordion#acessorios-mobile": {
+        "props": {
+            "blockClass": "header"
+        },
+        "children": ["vtex.menu@2.x:menu#acessorios-mobile-accordion"]
+    },
+    "vtex.menu@2.x:menu#acessorios-mobile-accordion": {
+        "props": {
+            "orientation": "vertical",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 02",
+                        "text": "Brincos"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 02",
+                        "text": "Pulseiras"
+                    }
+                },
+                {
+                    "id": "menu-item-ver-todos",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": true,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/VER TODOS",
+                        "noFollow": false,
+                        "tagTitle": "VER TODOS",
+                        "text": "VER TODOS"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,306 @@
+{
+    //desktop
+
+    "overlay-trigger#novidades": {
+        "props": {
+            "trigger": "hover"
+        },
+        "children": ["menu-item#novidades", "overlay-layout#novidades-overlay"]
+    },
+
+    "overlay-layout#novidades-overlay": {
+        "props": {
+            //"scrollBehavior": "lock-page-scroll",
+            "placement": "bottom",
+            "backdrop": "visible",
+            "blockClass": "custom-dropdown"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-novidades",
+            "image#sub-menu-banner--novidades"
+        ]
+    },
+
+    "menu-item#novidades": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-novidades",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "type": "internal",
+                "href": "/novidades",
+                "noFollow": true,
+                "tagTitle": "novidades",
+                "text": "NOVIDADES"
+            }
+        }
+        //"blocks": ["vtex.menu@2.x:submenu#novidades"]
+    },
+
+    "vtex.menu@2.x:submenu#novidades": {
+        "children": [
+            "vtex.menu@2.x:menu#submenu-novidades",
+            "image#sub-menu-banner--novidades"
+        ],
+        "props": {
+            "blockClass": "custom-dropwdown"
+        }
+    },
+    "image#sub-menu-banner--novidades": {
+        "props": {
+            "blockClass": "menu-banner",
+            "src": "assets/imgs/novidades-menu-image.png",
+            "maxWidth": 307,
+            "link": true
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-novidades": {
+        "props": {
+            "blockClass": ["custom-dropdown-submenu", "novidades"],
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 01",
+                        "text": "Verão 2022"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 02",
+                        "text": "Inverno 2021"
+                    }
+                },
+                {
+                    "id": "menu-item-link-03",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 03",
+                        "text": "Alto verão"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 04",
+                        "text": "All black"
+                    }
+                },
+                {
+                    "id": "menu-item-link-05",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 05",
+                        "text": "Bolsas"
+                    }
+                },
+                {
+                    "id": "menu-item-link-06",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 06",
+                        "text": "Acessórios"
+                    }
+                },
+                {
+                    "id": "menu-item-link-07",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 07",
+                        "text": "Calçados"
+                    }
+                },
+                {
+                    "id": "menu-item-ver-todos",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": true,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/VER TODAS",
+                        "noFollow": false,
+                        "tagTitle": "VER TODAS",
+                        "text": "VER TODAS"
+                    }
+                }
+            ]
+        }
+    },
+
+    //MOBILE
+
+    "vtex.menu@2.x:submenu.accordion#novidades-mobile": {
+        "props": {
+            "blockClass": "header"
+        },
+        "children": ["vtex.menu@2.x:menu#novidades-mobile-accordion"]
+    },
+    "vtex.menu@2.x:menu#novidades-mobile-accordion": {
+        "props": {
+            "orientation": "vertical",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 01",
+                        "text": "Verão 2022"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 02",
+                        "text": "Inverno 2021"
+                    }
+                },
+                {
+                    "id": "menu-item-link-03",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 03",
+                        "text": "Alto verão"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 04",
+                        "text": "All black"
+                    }
+                },
+                {
+                    "id": "menu-item-link-05",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 05",
+                        "text": "Bolsas"
+                    }
+                },
+                {
+                    "id": "menu-item-link-06",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 06",
+                        "text": "Acessórios"
+                    }
+                },
+                {
+                    "id": "menu-item-link-07",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 07",
+                        "text": "Calçados"
+                    }
+                },
+                {
+                    "id": "menu-item-ver-todos",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": true,
+                    "blockClass": "teste-ver-todos",
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/VER TODAS",
+                        "noFollow": false,
+                        "tagTitle": "VER TODAS",
+                        "text": "VER TODAS"
+                    }
+                }
+            ]
+        }
+    },
+    "menu-item#category-novidades--mobile": {
+        "props": {
+            "blockClass": "header-menu-accordion-title",
+            "id": "menu-item-category-novidades",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "text": "NOVIDADES"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu.accordion#novidades-mobile"]
+    }
+}

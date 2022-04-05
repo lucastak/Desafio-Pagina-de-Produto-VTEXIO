@@ -1,0 +1,568 @@
+{
+    //DESKTOP
+    //teste
+    "overlay-trigger#sapatos": {
+        "props": {
+            "trigger": "hover"
+        },
+        "children": ["menu-item#sapatos", "overlay-layout#sapatos-overlay"]
+    },
+
+    "overlay-layout#sapatos-overlay": {
+        "props": {
+            //"scrollBehavior": "lock-page-scroll",
+            "placement": "bottom",
+            "backdrop": "visible",
+            "blockClass": "custom-dropdown"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-sapatos",
+            //"sku-selector#m3",
+            "FakeNumberingSku",
+            "image#sub-menu-banner--sapatos"
+        ]
+    },
+
+    "menu-item#sapatos": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-sapatos",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "type": "internal",
+                "href": "/sapatos",
+                "noFollow": true,
+                "tagTitle": "sapatos",
+                "text": "SAPATOS"
+            }
+        }
+        //"blocks": ["vtex.menu@2.x:submenu#sapatos"]
+    },
+
+    "vtex.menu@2.x:submenu#sapatos": {
+        "children": [
+            "vtex.menu@2.x:menu#submenu-sapatos",
+            //"sku-selector#m3",
+            "FakeNumberingSku",
+            "image#sub-menu-banner--sapatos"
+        ],
+        "props": {
+            "blockClass": "custom-dropwdown"
+        }
+    },
+    "image#sub-menu-banner--sapatos": {
+        "props": {
+            "blockClass": "menu-banner-sapatos",
+            "src": "assets/imgs/sapatos-menu-image.png",
+            "maxWidth": 307,
+            "link": true
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-sapatos": {
+        "props": {
+            "blockClass": ["custom-dropdown-submenu", "sapatos"],
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 01",
+                        "text": "Sandália"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 02",
+                        "text": "Sapatilha"
+                    }
+                },
+                {
+                    "id": "menu-item-link-03",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 03",
+                        "text": "Botas"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 04",
+                        "text": "Rasteiras"
+                    }
+                },
+                {
+                    "id": "menu-item-link-05",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 05",
+                        "text": "Scarpins"
+                    }
+                },
+                {
+                    "id": "menu-item-link-06",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 06",
+                        "text": "Peep Toe"
+                    }
+                },
+                {
+                    "id": "menu-item-link-07",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 07",
+                        "text": "Mules"
+                    }
+                },
+                {
+                    "id": "menu-item-link-08",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 07",
+                        "text": "Tamancos"
+                    }
+                },
+                {
+                    "id": "menu-item-link-09",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 09",
+                        "text": "Tênis"
+                    }
+                },
+                {
+                    "id": "menu-item-link-10",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 10",
+                        "text": "Slip On"
+                    }
+                },
+                {
+                    "id": "menu-item-link-11",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 11",
+                        "text": "Alpargatas"
+                    }
+                },
+                {
+                    "id": "menu-item-link-12",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 12",
+                        "text": "Mocassins"
+                    }
+                },
+                {
+                    "id": "menu-item-link-13",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 13",
+                        "text": "Chinelos"
+                    }
+                },
+                {
+                    "id": "menu-item-link-14",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 14",
+                        "text": "Espadrilles"
+                    }
+                },
+                {
+                    "id": "menu-item-link-15",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 15",
+                        "text": "Plataformas"
+                    }
+                },
+                {
+                    "id": "menu-item-link-16",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 16",
+                        "text": "Anabela"
+                    }
+                },
+                {
+                    "id": "menu-item-link-17",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 17",
+                        "text": "Comfort Plus"
+                    }
+                },
+                {
+                    "id": "menu-item-ver-todos",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": true,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/VER TODOS",
+                        "noFollow": false,
+                        "tagTitle": "VER TODOS",
+                        "text": "VER TODOS"
+                    }
+                }
+            ]
+        }
+    },
+
+    //MOBILE
+    "menu-item#category-sapatos--mobile": {
+        "props": {
+            "blockClass": "header-menu-accordion-title",
+            "id": "menu-item-category-sapatos",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 2,
+                "text": "sapatos"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu.accordion#sapatos-mobile"]
+    },
+    "vtex.menu@2.x:submenu.accordion#sapatos-mobile": {
+        "props": {
+            "blockClass": "header"
+        },
+        "children": ["vtex.menu@2.x:menu#sapatos-mobile-accordion"]
+    },
+    "vtex.menu@2.x:menu#sapatos-mobile-accordion": {
+        "props": {
+            "orientation": "vertical",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 01",
+                        "text": "Sandália"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 02",
+                        "text": "Sapatilha"
+                    }
+                },
+                {
+                    "id": "menu-item-link-03",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 03",
+                        "text": "Botas"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 04",
+                        "text": "Rasteiras"
+                    }
+                },
+                {
+                    "id": "menu-item-link-05",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 05",
+                        "text": "Scarpins"
+                    }
+                },
+                {
+                    "id": "menu-item-link-06",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 06",
+                        "text": "Peep Toe"
+                    }
+                },
+                {
+                    "id": "menu-item-link-07",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 07",
+                        "text": "Mules"
+                    }
+                },
+                {
+                    "id": "menu-item-link-08",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 07",
+                        "text": "Tamancos"
+                    }
+                },
+                {
+                    "id": "menu-item-link-09",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 09",
+                        "text": "Tênis"
+                    }
+                },
+                {
+                    "id": "menu-item-link-10",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 10",
+                        "text": "Slip On"
+                    }
+                },
+                {
+                    "id": "menu-item-link-11",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 11",
+                        "text": "Alpargatas"
+                    }
+                },
+                {
+                    "id": "menu-item-link-12",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 12",
+                        "text": "Mocassins"
+                    }
+                },
+                {
+                    "id": "menu-item-link-13",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 13",
+                        "text": "Chinelos"
+                    }
+                },
+                {
+                    "id": "menu-item-link-14",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 14",
+                        "text": "Espadrilles"
+                    }
+                },
+                {
+                    "id": "menu-item-link-15",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 15",
+                        "text": "Plataformas"
+                    }
+                },
+                {
+                    "id": "menu-item-link-16",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 16",
+                        "text": "Anabela"
+                    }
+                },
+                {
+                    "id": "menu-item-link-17",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 17",
+                        "text": "Comfort Plus"
+                    }
+                },
+                {
+                    "id": "menu-item-ver-todos",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": true,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/VER TODOS",
+                        "noFollow": false,
+                        "tagTitle": "VER TODOS",
+                        "text": "VER TODOS"
+                    }
+                }
+            ]
+        }
+    }
+}

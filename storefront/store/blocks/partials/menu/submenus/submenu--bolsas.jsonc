@@ -1,0 +1,332 @@
+{
+    //DESKTOP
+
+    "overlay-trigger#bolsas": {
+        "props": {
+            "trigger": "hover"
+        },
+        "children": ["menu-item#bolsas", "overlay-layout#bolsas-overlay"]
+    },
+
+    "overlay-layout#bolsas-overlay": {
+        "props": {
+            //"scrollBehavior": "lock-page-scroll",
+            "placement": "bottom",
+            "backdrop": "visible",
+            "blockClass": "custom-dropdown"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-bolsas",
+            "FakeSizeSku",
+            "image#sub-menu-banner--bolsas"
+        ]
+    },
+
+    "menu-item#bolsas": {
+        "props": {
+            "blockClass": ["menu-links-item"],
+            "id": "menu-item-bolsas",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "type": "internal",
+                "href": "/bolsas",
+                "noFollow": true,
+                "tagTitle": "bolsas",
+                "text": "BOLSAS"
+            }
+        }
+        //"blocks": ["vtex.menu@2.x:submenu#bolsas"]
+    },
+
+    "vtex.menu@2.x:submenu#bolsas": {
+        "children": [
+            "vtex.menu@2.x:menu#submenu-bolsas",
+            "FakeSizeSku",
+            "image#sub-menu-banner--bolsas"
+        ],
+        "props": {
+            "blockClass": "custom-dropwdown"
+        }
+    },
+    "image#sub-menu-banner--bolsas": {
+        "props": {
+            "blockClass": "menu-banner",
+            "src": "assets/imgs/sapatos-menu-image.png",
+            "maxWidth": 307,
+            "link": true
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-bolsas": {
+        "props": {
+            "blockClass": ["custom-dropdown-submenu", "bolsas"],
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 01",
+                        "text": "Carteiras"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 02",
+                        "text": "Clutchs"
+                    }
+                },
+                {
+                    "id": "menu-item-link-03",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 03",
+                        "text": "Transversal"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 04",
+                        "text": "Bolsa Saco"
+                    }
+                },
+                {
+                    "id": "menu-item-link-05",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 05",
+                        "text": "Tote/Shopper"
+                    }
+                },
+                {
+                    "id": "menu-item-link-06",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 06",
+                        "text": "Bolsa Carteiro"
+                    }
+                },
+                {
+                    "id": "menu-item-link-07",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 07",
+                        "text": "Bolsa Baú"
+                    }
+                },
+                {
+                    "id": "menu-item-link-08",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 08",
+                        "text": "Mochila"
+                    }
+                },
+                {
+                    "id": "menu-item-ver-todos",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": true,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/VER TODOS",
+                        "noFollow": false,
+                        "tagTitle": "VER TODOS",
+                        "text": "VER TODOS"
+                    }
+                }
+            ]
+        }
+    },
+
+    //MOBILE
+    "menu-item#category-bolsas--mobile": {
+        "props": {
+            "blockClass": "header-menu-accordion-title",
+            "id": "menu-item-category-sapatos",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 2,
+                "text": "Bolsas"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu.accordion#bolsas-mobile"]
+    },
+    "vtex.menu@2.x:submenu.accordion#bolsas-mobile": {
+        "props": {
+            "blockClass": "header"
+        },
+        "children": ["vtex.menu@2.x:menu#bolsas-mobile-accordion"]
+    },
+    "vtex.menu@2.x:menu#bolsas-mobile-accordion": {
+        "props": {
+            "orientation": "vertical",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 01",
+                        "text": "Carteiras"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 02",
+                        "text": "Clutchs"
+                    }
+                },
+                {
+                    "id": "menu-item-link-03",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 03",
+                        "text": "Transversal"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 04",
+                        "text": "Bolsa Saco"
+                    }
+                },
+                {
+                    "id": "menu-item-link-05",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 05",
+                        "text": "Tote/Shopper"
+                    }
+                },
+                {
+                    "id": "menu-item-link-06",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 06",
+                        "text": "Bolsa Carteiro"
+                    }
+                },
+                {
+                    "id": "menu-item-link-07",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 07",
+                        "text": "Bolsa Baú"
+                    }
+                },
+                {
+                    "id": "menu-item-link-08",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "#",
+                        "noFollow": false,
+                        "tagTitle": "Categoria 08",
+                        "text": "Mochila"
+                    }
+                },
+                {
+                    "id": "menu-item-ver-todos",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": true,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/VER TODOS",
+                        "noFollow": false,
+                        "tagTitle": "VER TODOS",
+                        "text": "VER TODOS"
+                    }
+                }
+            ]
+        }
+    }
+}
